@@ -1,17 +1,83 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1">
     <title>Data Lovers</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div id="root"></div>
-   <h1>COMPROBANDO</h1>
+   <!-- Este es el proyecto DataLovers en el que estoy trabajando con Yahaira-->
+    <header>
+  <img id="logoPikachu" src="img/logo.png" alt="log de pokemon">
 
+                <nav id="header">
+                <ul class="navigator">
+                  <li> <a href="">TODOS</a>  </li>
+                  <li> <a href="">ORDENAR</a> </li>
+                     <ul>
+                        <li> <a href="">A-Z</a> </li>
+                        <li> <a href="">Z-A</a> </li>
+                        <li> <a href="">MAYOR A MENOR PESO</a> </li>
+                        <li> <a href="">N° PODERES</a> </li>
+                        <li> <a href="">N° APARICIONES</a> </li>
+                     </ul>
 
+                  <li> <a href="">TIPO</a> </li>
+                    <ul>
+                       <li>ACERO</li>
+                       <li>AGUA</li>
+                       <li>BICHO</li>
+                       <li>DRAGON</li>
+                       <li>ELÉCTRICO</li>
+                       <li>FANTASMA</li>
+                       <li>FUEGO</li>
+                       <li>HADA</li>
+                       <li>HIELO</li>
+                       <li>LUCHA</li>
+                       <li>NORMAL</li>
+                       <li>PLANTA</li>
+                       <li>PSÍQUICO</li>
+                       <li>ROCA</li>
+                       <li>SINIESTRO</li>
+                       <li>TIERRA</li>
+                       <li>VENENO</li>
+                       <li>VOLADOR</li>
+                    </ul>
 
+                  <li> <a href="">DEBILIDAD</a> </li>
 
+                  <li> <a href="">CERRAR SESIÓN</a>  </li>
+              </ul>
+            <!-- WAI-ARIA -->
+       <input id="searchPokemones" type="search" autocomplete="off" name="buscandoPokemones" aria-label="Search through site content" size="27" placeholder="Ingrese el nombre del Pokemón...">
+        <button>Buscar</button>
+            </nav>
+
+    </header>
+      <main>
+
+        <section id="seccion1" style="display: block;">
+
+          <p>Todos los pokemones <span id="numberPokemonesDisplay"> 0 </span> de 151</p>
+
+          <div id="contenedorPokemonesPantalla">
+
+            <ul id="pokemonesDisplay">
+
+            </ul>
+
+          </div>
+          </section>
+                <!-- se mostrarán 5 pokemones in line/ habrán 2 columnas de pokemones en total se mostrarán 10 pokemones en pantalla -->
+
+      </main>
+    <footer>
+      <p>Proyecto3-DataLovers, por Diana Quispe y Yahaira Perez para Laboratoria-2023</p>
+    </footer>
     <script src="main.js" type="module"></script>
   </body>
 </html>
+<!-- Acá va la página que se mostrará al usuario. También nos sirve para indicar qué scripts se usarán y unir todo lo que
+hemos hecho. -->
