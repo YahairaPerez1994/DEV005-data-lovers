@@ -1,7 +1,7 @@
 #logoPikachu {
- width: 100px;
- height: auto;
- margin: 0px 0px 15px 54px;
+  width: 100px;
+  height: auto;
+  margin: 0px 0px 15px 54px;
 }
 
 /* #divImgHeader{
@@ -19,7 +19,7 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
-  margin: 0;
+  margin: 10px 10px 10px 10px; /* 10px arriba, 3px derecha, 30px abajo, 5px izquierda */
 }
 header {
   margin-top: 20px;
@@ -28,8 +28,8 @@ header {
 }
 
 #header {
- margin: auto;
- justify-content: center;
+  margin: auto;
+  justify-content: center;
 }
 #header ul {
   list-style: none;
@@ -84,7 +84,7 @@ header {
 
 #header ul ul li {
   float: none;
-  width: 150px
+  width: 150px;
 }
 
 /* enlaces de los items del menu desplegable */
@@ -100,18 +100,7 @@ header {
   display: block;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-      			/* * {
+/* * {
       			  margin: 0px;
       			  padding: 0px;
       			}
@@ -131,8 +120,8 @@ display: inline-flex;
 
 } */
 
- /* por clase */
-          /* .navigator > li {
+/* por clase */
+/* .navigator > li {
       			  float: left;
       			}
       			.navigator li a {
@@ -143,14 +132,13 @@ display: inline-flex;
             display: block;
             } */
 
-      			  /* /* margin: 0 auto; centramos
+/* /* margin: 0 auto; centramos
       			  /*Centramos automaticamente
       			 */
-            /* .navigator li a:hover{
+/* .navigator li a:hover{
               background-color: burlywood;
 
             } */
-
 
 /*
             .navigator li ul {
@@ -171,12 +159,89 @@ display: inline-flex;
       			  right: -140px;
       			  top: 0px;
       			} */
+
+.ContieneTodosLosPokemones {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 50px;
+  margin: 3%;
+  /* display: -webkit-flex; */
+  /* width: 250px; */
+  /* position: absolute; */
+  /* transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%; */
+}
+
+.Cards {
+  position: relative;
+  background: radial-gradient(circle at 50% 0%, orange 36%, #ffffff 36%);
+  width: 90%;
+  padding: 30px 20px;
+  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+  border: 1px solid black;
+}
+
+.imgCard {
+  display: block;
+  width: 180px;
+  max-height: 200px;
+  position: relative;
+  margin: 20px auto;
+}
+
+.hp {
+  width: 80px;
+  background-color: #ffffff;
+  text-align: center;
+  padding: 8px 0;
+  border-radius: 30px;
+  margin-left: auto;
+  font-weight: 400;
+}
+
+.poke-name {
+  text-align: center;
+  font-weight: 600;
+}
+
+.types {
+  display: flex;
+  justify-content: space-around;
+  margin: 20x 0 40px 0;
+}
+
+.hp span,
+.types span {
+  font-size: 12px;
+  letter-spacing: 0.4px;
+  font-weight: 600;
+}
+.stats {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+}
+.stats p {
+  color: #404060;
+}
+.Cards > div {
+  margin: 20px;
+}
+.poke-number {
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+}
+
 footer {
   text-align: center;
   font-family: sans-serif;
   font-weight: 300px;
-  background-color: #F5EB6D;
-  position: absolute;
+  background-color: #f5eb6d;
+  /* position: absolute; */
   bottom: 0;
   width: 100%;
   color: #000;
