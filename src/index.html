@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8">
     <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,86 +9,79 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header>
-              <!--  <nav id="header">
-                <img id="logoPikachu" src="img/logo.png" alt="log de pokemon">
-                <ul class="navigator">
-                  <li> <a href="">TODOS</a>  </li>
-                  <li> <a href="">ORDENAR</a> </li>
-                     <ul>
-                        <li> <a href="">A-Z</a> </li>
-                        <li> <a href="">Z-A</a> </li>
-                        <li> <a href="">MAYOR A MENOR PESO</a> </li>
-                        <li> <a href="">N° PODERES</a> </li>
-                        <li> <a href="">N° APARICIONES</a> </li>
-                     </ul>
+    <header id="headerHtml">
+                <nav id="header">
+                <img id="imgNavBar" src="img/pokemon-logo.gif" alt="Logo de pokemon>
 
-                  <li> <a href="">TIPO</a> </li>
+                  <label for="ordenar">ORDENAR</label>
+                  <select name="ordenar" id="ordenar">                  
+                        <option disabled="">Seleccione una opción</option>
+                        <option value="TODOS" id="todos">TODOS</option>
+                        <option value="A-Z" id="A-Z">A-Z</option>
+                        <option value="Z-A" id="Z-A">Z-A</option>                     
+                  </select>
+
+                  <label for="tipo">TIPO</label>
+                  <select name="tipo" id="tipo">
+                  
+                      <option disabled="">Seleccione una opción</option>
+                      <option value="ACERO">ACERO</option>
+                      <option value="AGUA">AGUA</option>
+                      <option value="BICHO">BICHO</option>
+                      <option value="DRAGON">DRAGON</option>
+                      <option value="ELÉCTRICO">ELÉCTRICO</option>
+                      <option value="FANTASMA">FANTASMA</option>
+                      <option value="FUEGO">FUEGO</option>
+                      <option value="HADA">HADA</option>
+                      <option value="HIELO">HIELO</option>
+                      <option value="LUCHA">LUCHA</option>
+                      <option value="NORMAL">NORMAL</option>
+                      <option value="PLANTA">PLANTA</option>
+                      <option value="PSÍQUICO">PSÍQUICO</option>
+                      <option value="ROCA">ROCA</option>
+                      <option value="FUEGO">SINIESTRO</option>
+                      <option value="TIERRA">TIERRA</option>
+                      <option value="VENENO">VENENO</option>
+                      <option value="VOLADOR">VOLADOR</option>
                     <ul>
-                       <li>ACERO</li>
-                       <li>AGUA</li>
-                       <li>BICHO</li>
-                       <li>DRAGON</li>
-                       <li>ELÉCTRICO</li>
-                       <li>FANTASMA</li>
-                       <li>FUEGO</li>
-                       <li>HADA</li>
-                       <li>HIELO</li>
-                       <li>LUCHA</li>
-                       <li>NORMAL</li>
-                       <li>PLANTA</li>
-                       <li>PSÍQUICO</li>
-                       <li>ROCA</li>
-                       <li>SINIESTRO</li>
-                       <li>TIERRA</li>
-                       <li>VENENO</li>
-                       <li>VOLADOR</li>
-                    </ul>
-
-                  <li> <a href="">DEBILIDAD</a> </li>
-
-                  <li> <a href="">CERRAR SESIÓN</a>  </li>
-              </ul l>
-            <!-WAI-ARIA -->
-       <!--<input id="searchPokemones" type="search" autocomplete="off" name="buscandoPokemones" aria-label="Search through site content" size="27" placeholder="Ingrese el nombre del Pokemón...">
+                  <li> <a href="">SALIR</a></li>
+                </ul>
+            <!--WAI-ARIA -->
+       <input id="searchPokemones" type="search" autocomplete="off" name="buscandoPokemones" aria-label="Search through site content" size="27" placeholder="Ingrese el nombre del Pokemón...">
         <button>Buscar</button>
-            </nav>-->
+            </nav>
 
     </header>
 
       <main>
         <section id="section0">
+          <table style="text-align: center;">
+            <tr>
+              <td><img id="logoVista1" src="img/pokemon-logo.gif" alt="Logo vista1"></td>
+            </tr>
+            <tr>
+              <td><h1> Bienvenido(a) al mundo mágico de los pokemones, esperemos que disfrutes de esta nueva aventura hecha para ti.</h1></td>
+            </tr>
+            <tr>
+              <td><input class="botones" type="button" id="empezar" value="Empezar"></td>
+            </tr>
+            <tr>
+              <td><img src="img/pikachu-imagen-animada-0027.gif" alt="Imagen animada"></td>
+            </tr>
+        </table>
+          </section>
 
-        <table>
-        <thead>  <img src="img/pokemon-logo.gif" alt="Logovista1"> </thead>
-        <tbody>
-       <h1> Bienvenido(a) al mundo magico de los pokemones, esperemos que disfrutes de esta nueva aventura hecha para ti.</h1>
-       <input class="btn1" type="button" id="empezar" value="Empezar">
-      </tbody>  
-      <tfoot></tfoot>
-      </table>
-
-      </section>
-
-
-
-
-
-
-
-
-        <section id="container" style="display: none;" >
-
-        </section>
-
-        <!-- se mostrarán 5 pokemones in line/ habrán 2 columnas de pokemones en total se mostrarán 10 pokemones en pantalla -->
+          <section id="contieneTodosLosPokemones" style="display: none;" >
+          </section>
 
       </main>
-    <footer>
-      <p>Proyecto3-DataLovers, por Diana Quispe y Yahaira Perez para Laboratoria-2023</p>
-    </footer>
+
+      <footer>
+        <div id="contenedorFooter">
+        <p>Proyecto3-DataLovers, por Diana Quispe y Yahaira Perez para Laboratoria-2023</p>
+        </div>
+      </footer>
     <script src="main.js" type="module"></script>
   </body>
 </html>
-<!-- Acá va la página que se mostrará al usuario. También nos sirve para indicar qué scripts se usarán y unir todo lo que
-hemos hecho. -->
+

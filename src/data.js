@@ -1,12 +1,50 @@
+//import pokemon from "./data/pokemon/pokemon";
+
 // estas funciones son de ejemplo
-
-export const example = () => {
-  return "example";
+//export const sortByName = (ordenar) => {
+export const sortData = (ordenar) => {
+  const copia = [...ordenar]
+  return copia.sort((datapokemonA, datapokemonB) =>{
+    if (datapokemonA.name > datapokemonB.name){
+      return 1;
+    } else if (datapokemonA.name < datapokemonB.name) {
+      return -1;
+    } else {
+      return 0;
+    } 
+  });
 };
 
-export const anotherExample = () => {
-  return "OMG";
-};
+// export const filterByType = (ordenar, typeUser) =>
+//   return ordenar.filter((data.pokemon) => data.pokemon.type.includes(typeUser));
+// };
+
+//export function sortData(data, order) {
+//  const orderArray = data.pokemon.slice().sort((a, b) => {
+//const nameA = a.name;
+//const nameB = b.name;
+//if (nameA < nameB) {
+//return -1;
+    //}
+    //else {
+      //return 1;
+   // }
+  //})
+  //if (order === 'AZ') {
+    //return {pokemon:orderArray}
+  // else {
+    //const inverso = orderArray.reverse();
+    //return {pokemon:inverso}
+  //}
+ //}
+
+//export const example = () => {
+//return "example";
+//};
+
+//export const anotherExample = () => {
+  //return "OMG";
+//};
 // El corazón de este proyecto es la manipulación de datos a través de arreglos y objetos.
 
 // Te reomendamos que este archivo contenga toda la funcionalidad que corresponda a obtener, procesar y manipular datos (tus funciones). Por ejemplo:
