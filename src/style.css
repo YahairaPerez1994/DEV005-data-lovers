@@ -181,7 +181,7 @@ display: inline-flex;
       			} */
 
 #contieneTodosLosPokemones {
-  display: grid !important;
+  display: grid; 
   grid-template-columns: repeat(5, 1fr);
   grid-gap: 50px;
   margin: 3%;

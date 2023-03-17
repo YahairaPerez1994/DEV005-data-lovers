@@ -2,27 +2,39 @@
 //import data from './data/lol/lol.js';
 import data from './data/pokemon/pokemon.js';
 import {sortData} from "./data.js";
+import pokemon from './data/pokemon/pokemon.js';
 
 const pokemones = data.pokemon;
+//Para porbar que corre la funcion
+// console.log(sortData(pokemones));
 
-// console.log(sortByName(pokemones));
 const headerHtml = document.getElementById("headerHtml");
-headerHtml.addEventListener("onload", ocultarHeader());
+// headerHtml.addEventListener("onload", ocultarHeader());
+
+headerHtml.style.display = "none";
+
+function ocultarHeader() {
+  headerHtml.style.display = "none";
+}
 
 const section0 = document.getElementById("section0");
 const container = document.getElementById("contieneTodosLosPokemones");
+container.style.display = "none";
+
 
 const btnEmpezar = document.getElementById("empezar");
-btnEmpezar.addEventListener("click", mostrarSeccionContainer());
+btnEmpezar.addEventListener("click", ()=>{
+  section0.style.display = "none";
+  container.style.display = "grid";
+  headerHtml.style.display = "block";
 
+});
+// btnEmpezar.addEventListener("click", mostrarSeccionContainer());
+section0.style.display = "block";
 function mostrarSeccionContainer() {
   section0.style.display = "none";
   mostrarHeader();
   container.style.display = "block";
-}
-
-function ocultarHeader() {
-  headerHtml.style.display = "none";
 }
 
 function mostrarHeader() {
@@ -30,8 +42,8 @@ function mostrarHeader() {
 }
 //Todos: hace referencia a las opciones del select
 //Chequear: para agregar lo del EVENT
-const sortTodos = document.getElementById("todos");
-sortTodos.addEventListener ("click", pintar(pokemones));
+//const sortTodos = document.getElementById("todos");
+//sortTodos.addEventListener ("click", pintar(pokemones));
 
 // function muestraTodoslosCards(array) {
 //   //console.log("ver que llega en cada caso: ", array);
@@ -115,9 +127,10 @@ document.getElementById("ordenar").addEventListener("change", (event) => {
     pintar(resultadoAZ);
   } else {
     const resultadoZA = sortData(pokemones); 
-    pintar(resultadoZA.reverse);
+    pintar(resultadoZA.reverse());
   }
 });
+
 
 // function muestralosCardsOrdenadosdelaAZ() {
 // }

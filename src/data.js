@@ -15,9 +15,9 @@ export const sortData = (ordenar) => {
   });
 };
 
-// export const filterByType = (ordenar, typeUser) =>
-//   return ordenar.filter((data.pokemon) => data.pokemon.type.includes(typeUser));
-// };
+//export const filterByType = (ordenar, typeUser) =>
+//return ordenar.filter((pokemones) => data.pokemon.type.includes(typeUser));
+//};
 
 //export function sortData(data, order) {
 //  const orderArray = data.pokemon.slice().sort((a, b) => {
