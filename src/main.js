@@ -3,6 +3,7 @@
 import data from './data/pokemon/pokemon.js';
 import {sortData} from "./data.js";
 import pokemon from './data/pokemon/pokemon.js';
+import {filterByType} from "./data.js";
 
 const pokemones = data.pokemon;
 //Para porbar que corre la funcion
@@ -130,6 +131,70 @@ document.getElementById("ordenar").addEventListener("change", (event) => {
     pintar(resultadoZA.reverse());
   }
 });
+
+document.getElementById("tipo").addEventListener("change", (event) => {
+      const optionType = event.target.value;
+      if(optionType === "ACERO"){
+         const typeAcero = filterByType(pokemones);
+         pintar(typeAcero);
+      }else if(optionType === "AGUA"){
+        const typeAgua = filterByType(pokemones);
+        pintar(typeAgua);
+     }else if(optionType === "BICHO"){
+      const typeBicho = filterByType(pokemones);
+      pintar(typeBicho);
+   }else if(optionType === "DRAGON"){
+    const typeDragon = filterByType(pokemones);
+    pintar(typeDragon);
+ }else if(optionType === "ELÉCTRICO"){
+  const typeEléctrico = filterByType(pokemones);
+  pintar(typeEléctrico);
+}else if(optionType === "FANTASMA"){
+  const typeFantasma = filterByType(pokemones);
+  pintar(typeFantasma);
+}else if(optionType === "FUEGO"){
+const typeFuego = filterByType(pokemones);
+pintar(typeFuego);
+}else if(optionType === "HADA"){
+  const typeHada = filterByType(pokemones);
+  pintar(typeHada);
+}else if(optionType === "HIELO"){
+const typeHielo = filterByType(pokemones);
+pintar(typeHielo);
+}else if(optionType === "LUCHA"){
+  const typeLucha = filterByType(pokemones);
+  pintar(typeLucha);
+}else if(optionType === "NORMAL"){
+const typeNormal = filterByType(pokemones);
+pintar(typeNormal);
+}else if(optionType === "PLANTA"){
+  const typePlanta = filterByType(pokemones);
+  pintar(typePlanta);
+}else if(optionType === "PSÍQUICO"){
+const typePsíquico = filterByType(pokemones);
+pintar(typePsíquico);
+}else if(optionType === "ROCA"){
+  const typeRoca = filterByType(pokemones);
+  pintar(typeRoca);
+}else if(optionType === "SINIESTRO"){
+const typeSiniestro = filterByType(pokemones);
+pintar(typeSiniestro);
+}else if(optionType === "TIERRA"){
+  const typeTierra = filterByType(pokemones);
+  pintar(typeTierra);
+}else if(optionType === "VENENO"){
+const typeVeneno = filterByType(pokemones);
+pintar(typeVeneno);
+}else{
+  const typeVolador = filterByType(pokemones);
+  pintar(typeVolador);
+  }
+}
+);
+
+
+
+// console.log(tipoPokemon);
 
 
 // function muestralosCardsOrdenadosdelaAZ() {
