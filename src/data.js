@@ -1,7 +1,3 @@
-//import pokemon from "./data/pokemon/pokemon";
-
-// estas funciones son de ejemplo
-//export const sortByName = (ordenar) => {
 export const sortData = (ordenar) => {
   const copia = [...ordenar]
   return copia.sort((datapokemonA, datapokemonB) =>{
@@ -15,56 +11,39 @@ export const sortData = (ordenar) => {
   });
 };
 
-export const filterByType = (data) =>{ 
-return data.filter((datatype) => data.includes(data.type));
-};
+function filtrar (data,tipo){
+  const copia1 = [...data]
+  const type = copia1.filter((elemento)=>{
+    if (elemento.type.includes(tipo))
+    {
+      return true;
+    } else {
+      return false
+    }
+  })
+  return type
+}
+
+function filtrar1 (data, searchPokemones){
+  const copia2 = [...data]
+  const name = copia2.filter((elemento)=>{
+    if (elemento.name.includes(searchPokemones))
+    {
+      return true;
+    } else {
+      return false
+    }
+  })
+  return name
+}
 
 
+export {
+  filtrar, filtrar1}
 
-
-
-// export const filtrarTipos = (data, tipo) => {
-//   const dataFiltrada = data.pokemon.filter((pokemon) =>
-//     pokemon.type.includes(tipo)
-//   );
-//   return { pokemon: dataFiltrada };
-// };
-
-
-
-
-
-
-
-//export function sortData(data, order) {
-//  const orderArray = data.pokemon.slice().sort((a, b) => {
-//const nameA = a.name;
-//const nameB = b.name;
-//if (nameA < nameB) {
-//return -1;
-    //}
-    //else {
-      //return 1;
-   // }
-  //})
-  //if (order === 'AZ') {
-    //return {pokemon:orderArray}
-  // else {
-    //const inverso = orderArray.reverse();
-    //return {pokemon:inverso}
-  //}
- //}
-
-//export const example = () => {
-//return "example";
-//};
-
-//export const anotherExample = () => {
-  //return "OMG";
-//};
 // El corazón de este proyecto es la manipulación de datos a través de arreglos y objetos.
 
-// Te reomendamos que este archivo contenga toda la funcionalidad que corresponda a obtener, procesar y manipular datos (tus funciones). Por ejemplo:
+// Te recomendamos que este archivo contenga toda la funcionalidad que corresponda a obtener, procesar y manipular datos (tus funciones). Por ejemplo:
 
 // filterData(data, condition): esta función filter o filtrar recibiría la data, y nos retornaría aquellos datos que sí cumplan con la condición.
 
