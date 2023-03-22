@@ -1,322 +1,948 @@
 @import url('https://fonts.googleapis.com/css2?family=Cookie&display=swap');
 
-
-#imgNavBar {
-  width: 100%;
-  height: 300px;
-}
-#searchPokemones {
-  margin: 20px;
-  justify-content: center;
-}
-/* imagen de fondo */
-body {
-  background-image: url(img/WhatsApp\ Image\ 2023-03-05\ at\ 12.30.57.jpeg);
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-  margin: 0;
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-}
-#searchPokemones {
-  margin: 20px;
-  justify-content: center;
-}
-
-/* #divImgHeader{
- width: 17%;
-margin: 0%;
-} */
-/*main {
-  text-align: center;
-} 
-
-
-/* imagen de fondo */
-/*body {
-  background-image: url(img/WhatsApp\ Image\ 2023-03-05\ at\ 12.30.57.jpeg);
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-  margin: 10px 10px 10px 10px; /* 10px arriba, 3px derecha, 30px abajo, 5px izquierda */
-
-header {
-  margin-top: 20px;
-  display: inline-flex;
-  width: -webkit-fill-available;
-}
-
-/* #header {
-  margin: auto;
-  justify-content: center;
-}
-#header ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-#header ul li {
-  background-color: #2e518b;
-  /* float: left; */
-/*}
-
-/* *#header ul a {
-  display: block;
-  color: #fff;
-  text-decoration: none;
-  font-weight: 400;
-  font-size: 15px;
-  padding: 10px;
-  font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-}
-
-/* items del menu */
-
-/* *#header ul li {
-  position: relative;
-  float: left;
-  margin: 0;
-  padding: 0;
-}
-
-/* efecto al pasar el ratón por los items del menu */
-
-/* *#header ul li:hover {
-  background: #5b78a7;
-}
-
-/* menu desplegable */
-
-/* *#header ul ul {
-  display: none;
-  position: absolute;
-  top: 100%;
-  left: 0;
-  background: #eee;
-  padding: 0;
-}
-
-/* items del menu desplegable */
-
-/* *#header ul ul li {
-  float: none;
-  width: 150px;
-}
-
-/* enlaces de los items del menu desplegable */
-
-/* *#header ul ul a {
-  line-height: 120%;
-  padding: 10px 15px;
-}
-
-/* items del menu desplegable al pasar el ratón */
-
-/* *#header ul li:hover > ul {
-  display: block;
-} */
-
-/* * {
-      			  margin: 0px;
-      			  padding: 0px;
-      			}
-
-      			#header {
-      			  margin: auto;
-      			  width: 500px;
-      			  font-family: Arial, Helvetica, sans-serif;
-      			}
-
-      			ul {
-      			  list-style: none;
-      			} */
-
-/* .nav {
-display: inline-flex;
-
-} */
-
-/* por clase */
-/* .navigator > li {
-      			  float: left;
-      			}
-      			.navigator li a {
-            background-color: deepskyblue;
-            color: #fff;
-            text-decoration: none;
-            padding: 10px 15px;
-            display: block;
-            } */
-
-/* /* margin: 0 auto; centramos
-      			  /*Centramos automaticamente
-      			 */
-/* .navigator li a:hover{
-              background-color: burlywood;
-
-            } */
-
-/*
-            .navigator li ul {
-              display: none;
-              position: absolute;
-              min-width: 140px;
-            }
-
-      			.navigator li:hover > ul {
-      			  display: block;
-      			}
-
-      			.navigator li ul li {
-      			  position: relative;
-      			}
-
-      			.navigator li ul li ul {
-      			  right: -140px;
-      			  top: 0px;
-      			} */
-
-#contieneTodosLosPokemones {
-  display: grid; 
-  grid-template-columns: repeat(5, 1fr);
-  grid-gap: 50px;
-  margin: 3%;
-  /* display: -webkit-flex; */
-  /* width: 250px; */
-  /* position: absolute; */
-  /* transform: translate(-50%, -50%);
-  top: 50%;
-  left: 50%; */
-}
-
-.Cards {
-  position: relative;
-  background: radial-gradient(circle at 50% 0%, orange 36%, #ffffff 36%);
-  width: 90%;
-  padding: 30px 20px;
-  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.15);
-  border-radius: 10px;
-  border: 1px solid black;
-}
-
-.imgCard {
-  display: block;
-  width: 150px;
-  max-height: 200px;
-  position: relative;
-  margin: 20px auto;
-  size: 150px;
-}
-
-.hp {
-  width: 80px;
-  background-color: #ffffff;
-  text-align: center;
-  padding: 8px 0;
-  border-radius: 30px;
-  margin-left: auto;
-  font-weight: 400;
-}
-
-.poke-name {
-  text-align: center;
-  font-weight: 600;
-}
-
-.types {
-  display: flex;
-  justify-content: space-around;
-  margin: 20x 0 40px 0;
-}
-
-.hp span,
-.types span {
-  font-size: 12px;
-  letter-spacing: 0.4px;
-  font-weight: 600;
-}
-.stats {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  text-align: center;
-}
-.stats p {
-  color: #404060;
-}
-.Cards > div {
-  margin: 20px;
-}
-.poke-number {
-  align-items: center;
-  justify-content: space-between;
-  text-align: center;
-}
-a {
-  outline: none;
-  text-decoration: none;
-  padding: 4px 3px 0;
-}
-a:link {
- color:#404060
-}
-a:visited {
-  color:#5F236B
-}
-a:focus{
-  border-bottom: 2px solid;
-  background:#F5EB6D
-}
-table > * {
-  text-align: center;
-  font-family: 'Cookie', cursive;
-  font-size: xx-large ;
-  margin: 0 auto;
-  padding: 10px 20px;
-  /* border: 2px solid black; */
-  width: 100%;
-  display: table;
-  }
-table > h1{
-font-family: 'Cookie', cursive;
-}
-#logoVista1 {
-width: 100%;
-height: 250px;
-}
-.botones {
-  font-family: 'Cookie', cursive;
-  font-size: 200% ;
-  color: #5F236B;
-  font-weight: bold;
-  background-color: #F5EB6D;
-  border: 7px solid #ED8554;
-  border-radius: 18px;
-  padding: 1px 1em;
-}
-footer{
-  text-align: center;
-  font-family: sans-serif;
-  font-weight: 300px;
-  /* position: absolute; */
-  bottom: 0;
-  width: 100%;
-  color:#F5EB6D ;
-  padding: 1em 0;
-  margin-top: auto;
-}
-#contenedorFooter {
-  background-image: url(img/noche-estrellada.gif);
-  background-position: center;
-  text-align: center;
-  color: #F5EB6D;
-  font-size: 17px;
+/* 
+  ##Device = Desktops (Escritorio)
+  ##Screen = 1281px pantallas de escritorio de alta resolución
+*/
+@media (min-width: 1281px) {
+  #imgNavBar {
     width: 100%;
-    height: 50px;
-    padding: 14px;
+    height: 300px;
+  }
+  #searchPokemones {
+    margin: 20px;
+    justify-content: center;
+  }
+  /* imagen de fondo */
+  body {
+    background-image: url(img/WhatsApp\ Image\ 2023-03-05\ at\ 12.30.57.jpeg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  #searchPokemones {
+    margin: 20px;
+    justify-content: center;
+  }
+  
+  header {
+    margin-top: 20px;
+    display: inline-flex;
+    width: -webkit-fill-available;
+  }
+  
+  #contieneTodosLosPokemones {
+    display: grid; 
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 50px;
+    margin: 3%;
+    /* display: -webkit-flex; */
+    /* width: 250px; */
+    /* position: absolute; */
+    /* transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%; */
+  }
+  
+  .Cards {
+    position: relative;
+    background: radial-gradient(circle at 50% 0%, orange 36%, #ffffff 36%);
+    width: 90%;
+    padding: 30px 20px;
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+    border: 1px solid black;
+  }
+  
+  .imgCard {
+    display: block;
+    width: 150px;
+    max-height: 200px;
+    position: relative;
+    margin: 20px auto;
+    size: 150px;
+  }
+  
+  .hp {
+    width: 80px;
+    background-color: #ffffff;
+    text-align: center;
+    padding: 8px 0;
+    border-radius: 30px;
+    margin-left: auto;
+    font-weight: 400;
+  }
+  
+  .poke-name {
+    text-align: center;
+    font-weight: 600;
+  }
+  
+  .types {
+    display: flex;
+    justify-content: space-around;
+    margin: 20x 0 40px 0;
+  }
+  
+  .hp span,
+  .types span {
+    font-size: 12px;
+    letter-spacing: 0.4px;
+    font-weight: 600;
+  }
+  .stats {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+  }
+  .stats p {
+    color: #404060;
+  }
+  .Cards > div {
+    margin: 20px;
+  }
+  .poke-number {
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+  }
+  a {
+    outline: none;
+    text-decoration: none;
+    padding: 4px 3px 0;
+  }
+  a:link {
+   color:#404060
+  }
+  a:visited {
+    color:#5F236B
+  }
+  a:focus{
+    border-bottom: 2px solid;
+    background:#F5EB6D
+  }
+  table > * {
+    text-align: center;
+    font-family: 'Cookie', cursive;
+    font-size: xx-large ;
+    margin: 0 auto;
+    padding: 10px 20px;
+    /* border: 2px solid black; */
+    width: 100%;
+    display: table;
+    }
+    .letra{
+      font-weight: 500;
+      font-size: 40px;
+      margin: 90px;
+     }
+  table > h1{
+  font-family: 'Cookie', cursive;
+  }
+  #logoVista1 {
+  width: 100%;
+  height: 250px;
+  }
+  .botones {
+    border: 1px solid black;
+    border-radius: 18px;
+    padding: 1px 1em;
+    background: orange 36%;
+    color: white;
+    font-family: monospace;
+    font-size: 150%;
+    text-decoration: none;
+    display: inline-block;
+    width: 6em;
+    text-align: center;
+  }
+  .pokebolaGift {
+    width: 30px;
+    height: 30px;
+  }
+  #contenedorImgTable{
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  width: 100%;
+  bottom: 43px;
+  }
+  article{
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+  align-items: end;
+  }
+  footer{
+    text-align: center;
+    font-family: sans-serif;
+    font-weight: 300px;
+   /* position: absolute;*/
+    bottom: 0;
+    width: 100%;
+    color:#F5EB6D ;
+    /* padding: 1em 0; */
+    margin-top: auto;
+  }
+  #contenedorFooter {
+    background-image: url(img/noche-estrellada.gif);
+    background-position: center;
+    text-align: center;
+    color: white;
+    font-size: 17px;
+    font-family: monospace;
+    font-weight: 700;
+      /* width: 100%; */
+      /* height: 50px; */
+      padding: 14px;
+  }
+  p{
+    margin: 0;
+  }
+}
+
+/* 
+  ##Device = Laptops, Desktops
+  ##Screen = B/w 1025px to 1280px
+*/
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+  #imgNavBar {
+    width: 100%;
+    height: 300px;
+  }
+  #searchPokemones {
+    margin: 20px;
+    justify-content: center;
+  }
+  /* imagen de fondo */
+  body {
+    background-image: url(img/WhatsApp\ Image\ 2023-03-05\ at\ 12.30.57.jpeg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  #searchPokemones {
+    margin: 20px;
+    justify-content: center;
+  }
+  
+  header {
+    margin-top: 20px;
+    display: inline-flex;
+    width: -webkit-fill-available;
+  }
+  
+  #contieneTodosLosPokemones {
+    display: grid; 
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 50px;
+    margin: 3%;
+    /* display: -webkit-flex; */
+    /* width: 250px; */
+    /* position: absolute; */
+    /* transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%; */
+  }
+  .Cards {
+    position: relative;
+    background: radial-gradient(circle at 50% 0%, orange 36%, #ffffff 36%);
+    width: 90%;
+    padding: 30px 20px;
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+    border: 1px solid black;
+  }
+  
+  .imgCard {
+    display: block;
+    width: 150px;
+    max-height: 200px;
+    position: relative;
+    margin: 20px auto;
+    size: 150px;
+  }
+  
+  .hp {
+    width: 80px;
+    background-color: #ffffff;
+    text-align: center;
+    padding: 8px 0;
+    border-radius: 30px;
+    margin-left: auto;
+    font-weight: 400;
+  }
+  
+  .poke-name {
+    text-align: center;
+    font-weight: 600;
+  }
+  
+  .types {
+    display: flex;
+    justify-content: space-around;
+    margin: 20x 0 40px 0;
+  }
+  
+  .hp span,
+  .types span {
+    font-size: 12px;
+    letter-spacing: 0.4px;
+    font-weight: 600;
+  }
+  .stats {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+  }
+  .stats p {
+    color: #404060;
+  }
+  .Cards > div {
+    margin: 20px;
+  }
+  .poke-number {
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+  }
+  a {
+    outline: none;
+    text-decoration: none;
+    padding: 4px 3px 0;
+  }
+  a:link {
+   color:#404060
+  }
+  a:visited {
+    color:#5F236B
+  }
+  a:focus{
+    border-bottom: 2px solid;
+    background:#F5EB6D
+  }
+  table > * {
+    text-align: center;
+    font-family: 'Cookie', cursive;
+    font-size: xx-large ;
+    margin: 0 auto;
+    padding: 10px 20px;
+    /* border: 2px solid black; */
+    width: 100%;
+    display: table;
+    }
+  table > h1{
+  font-family: 'Cookie', cursive;
+  }
+  #logoVista1 {
+  width: 100%;
+  height: 250px;
+  }
+  .botones {
+    font-family: 'Cookie', cursive;
+    font-size: 200% ;
+    color: #5F236B;
+    font-weight: bold;
+    background-color: #F5EB6D;
+    border: 7px solid #ED8554;
+    border-radius: 18px;
+    padding: 1px 1em;
+  }
+  footer{
+    text-align: center;
+    font-family: sans-serif;
+    font-weight: 300px;
+    /* position: absolute; */
+    bottom: 0;
+    width: 100%;
+    color:#F5EB6D ;
+    padding: 1em 0;
+    margin-top: auto;
+  }
+  #contenedorFooter {
+    background-image: url(img/noche-estrellada.gif);
+    background-position: center;
+    text-align: center;
+    color: #F5EB6D;
+    font-size: 17px;
+      width: 100%;
+      height: 50px;
+      padding: 14px;
+  }
+  
+}
+
+/* 
+  ##Device = Tablets, Ipads (portrait/Vertical)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  #imgNavBar {
+    width: 100%;
+    height: 300px;
+  }
+  #searchPokemones {
+    margin: 20px;
+    justify-content: center;
+  }
+  /* imagen de fondo */
+  body {
+    background-image: url(img/WhatsApp\ Image\ 2023-03-05\ at\ 12.30.57.jpeg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  #searchPokemones {
+    margin: 20px;
+    justify-content: center;
+  }
+  
+  header {
+    margin-top: 20px;
+    display: inline-flex;
+    width: -webkit-fill-available;
+  }
+  
+  #contieneTodosLosPokemones {
+    display: grid; 
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 50px;
+    margin: 3%;
+    /* display: -webkit-flex; */
+    /* width: 250px; */
+    /* position: absolute; */
+    /* transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%; */
+  }
+  
+  .Cards {
+    position: relative;
+    background: radial-gradient(circle at 50% 0%, orange 36%, #ffffff 36%);
+    width: 90%;
+    padding: 30px 20px;
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+    border: 1px solid black;
+  }
+  
+  .imgCard {
+    display: block;
+    width: 150px;
+    max-height: 200px;
+    position: relative;
+    margin: 20px auto;
+    size: 150px;
+  }
+  
+  .hp {
+    width: 80px;
+    background-color: #ffffff;
+    text-align: center;
+    padding: 8px 0;
+    border-radius: 30px;
+    margin-left: auto;
+    font-weight: 400;
+  }
+  
+  .poke-name {
+    text-align: center;
+    font-weight: 600;
+  }
+  
+  .types {
+    display: flex;
+    justify-content: space-around;
+    margin: 20x 0 40px 0;
+  }
+  
+  .hp span,
+  .types span {
+    font-size: 12px;
+    letter-spacing: 0.4px;
+    font-weight: 600;
+  }
+  .stats {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+  }
+  .stats p {
+    color: #404060;
+  }
+  .Cards > div {
+    margin: 20px;
+  }
+  .poke-number {
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+  }
+  a {
+    outline: none;
+    text-decoration: none;
+    padding: 4px 3px 0;
+  }
+  a:link {
+   color:#404060
+  }
+  a:visited {
+    color:#5F236B
+  }
+  a:focus{
+    border-bottom: 2px solid;
+    background:#F5EB6D
+  }
+  table > * {
+    text-align: center;
+    font-family: 'Cookie', cursive;
+    font-size: xx-large ;
+    margin: 0 auto;
+    padding: 10px 20px;
+    /* border: 2px solid black; */
+    width: 100%;
+    display: table;
+    }
+  table > h1{
+  font-family: 'Cookie', cursive;
+  }
+  #logoVista1 {
+  width: 100%;
+  height: 250px;
+  }
+  .botones {
+    font-family: 'Cookie', cursive;
+    font-size: 200% ;
+    color: #5F236B;
+    font-weight: bold;
+    background-color: #F5EB6D;
+    border: 7px solid #ED8554;
+    border-radius: 18px;
+    padding: 1px 1em;
+  }
+  footer{
+    text-align: center;
+    font-family: sans-serif;
+    font-weight: 300px;
+    /* position: absolute; */
+    bottom: 0;
+    width: 100%;
+    color:#F5EB6D ;
+    padding: 1em 0;
+    margin-top: auto;
+  }
+  #contenedorFooter {
+    background-image: url(img/noche-estrellada.gif);
+    background-position: center;
+    text-align: center;
+    color: #F5EB6D;
+    font-size: 17px;
+      width: 100%;
+      height: 50px;
+      padding: 14px;
+  } 
+}
+
+/* 
+  ##Device = Tablets, Ipads (landscape/horizontal)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  #imgNavBar {
+    width: 100%;
+    height: 300px;
+  }
+  #searchPokemones {
+    margin: 20px;
+    justify-content: center;
+  }
+  /* imagen de fondo */
+  body {
+    background-image: url(img/WhatsApp\ Image\ 2023-03-05\ at\ 12.30.57.jpeg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  #searchPokemones {
+    margin: 20px;
+    justify-content: center;
+  }
+  
+  header {
+    margin-top: 20px;
+    display: inline-flex;
+    width: -webkit-fill-available;
+  }
+  
+  #contieneTodosLosPokemones {
+    display: grid; 
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 50px;
+    margin: 3%;
+    /* display: -webkit-flex; */
+    /* width: 250px; */
+    /* position: absolute; */
+    /* transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%; */
+  }
+  
+  .Cards {
+    position: relative;
+    background: radial-gradient(circle at 50% 0%, orange 36%, #ffffff 36%);
+    width: 90%;
+    padding: 30px 20px;
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+    border: 1px solid black;
+  }
+  
+  .imgCard {
+    display: block;
+    width: 150px;
+    max-height: 200px;
+    position: relative;
+    margin: 20px auto;
+    size: 150px;
+  }
+  
+  .hp {
+    width: 80px;
+    background-color: #ffffff;
+    text-align: center;
+    padding: 8px 0;
+    border-radius: 30px;
+    margin-left: auto;
+    font-weight: 400;
+  }
+  
+  .poke-name {
+    text-align: center;
+    font-weight: 600;
+  }
+  
+  .types {
+    display: flex;
+    justify-content: space-around;
+    margin: 20x 0 40px 0;
+  }
+  
+  .hp span,
+  .types span {
+    font-size: 12px;
+    letter-spacing: 0.4px;
+    font-weight: 600;
+  }
+  .stats {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+  }
+  .stats p {
+    color: #404060;
+  }
+  .Cards > div {
+    margin: 20px;
+  }
+  .poke-number {
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+  }
+  a {
+    outline: none;
+    text-decoration: none;
+    padding: 4px 3px 0;
+  }
+  a:link {
+   color:#404060
+  }
+  a:visited {
+    color:#5F236B
+  }
+  a:focus{
+    border-bottom: 2px solid;
+    background:#F5EB6D
+  }
+  table > * {
+    text-align: center;
+    font-family: 'Cookie', cursive;
+    font-size: xx-large ;
+    margin: 0 auto;
+    padding: 10px 20px;
+    /* border: 2px solid black; */
+    width: 100%;
+    display: table;
+    }
+  table > h1{
+  font-family: 'Cookie', cursive;
+  }
+  #logoVista1 {
+  width: 100%;
+  height: 250px;
+  }
+  .botones {
+    font-family: 'Cookie', cursive;
+    font-size: 200% ;
+    color: #5F236B;
+    font-weight: bold;
+    background-color: #F5EB6D;
+    border: 7px solid #ED8554;
+    border-radius: 18px;
+    padding: 1px 1em;
+  }
+  footer{
+    text-align: center;
+    font-family: sans-serif;
+    font-weight: 300px;
+    /* position: absolute; */
+    bottom: 0;
+    width: 100%;
+    color:#F5EB6D ;
+    padding: 1em 0;
+    margin-top: auto;
+  }
+  #contenedorFooter {
+    background-image: url(img/noche-estrellada.gif);
+    background-position: center;
+    text-align: center;
+    color: #F5EB6D;
+    font-size: 17px;
+      width: 100%;
+      height: 50px;
+      padding: 14px;
+  }
+}
+/* 
+  ##Device = La mayoría de los Smartphones Móviles (Portrait/Vertical)
+  ##Screen = B/w 320px to 479px
+*/
+@media (min-width: 280px) and (max-width: 480px) {
+  #imgNavBar {
+    width: 115%;
+    height: 210px;
+  }
+  #searchPokemones {
+    margin: 20px;
+    justify-content: center;
+  }
+  /* imagen de fondo */
+  body {
+    background-image: url(img/WhatsApp\ Image\ 2023-03-05\ at\ 12.30.57.jpeg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  #searchPokemones {
+    margin: 20px;
+    justify-content: center;
+  }
+  
+  header {
+    margin-top: 20px;
+    display: inline-flex;
+    width: -webkit-fill-available;
+  }
+  
+  #contieneTodosLosPokemones {
+    display: grid; 
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 50px;
+    margin: 3%;
+
+    /* display: -webkit-flex; */
+    /* width: 250px; */
+    /* position: absolute; */
+    /* transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%; */
+  }
+  
+  .Cards {
+    position: relative;
+    background: radial-gradient(circle at 50% 0%, orange 36%, #ffffff 36%);
+    width: 105%;
+    padding: 30px 20px;
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+    border: 1px solid black;
+  }
+  
+  .imgCard {
+    display: block;
+    width: 250px;
+    max-height: 200px;
+    position: relative;
+    margin: 20px auto;
+    size: 150px;
+  }
+  
+  .hp {
+    width: 80px;
+    background-color: #ffffff;
+    text-align: center;
+    padding: 8px 0;
+    border-radius: 30px;
+    margin-left: auto;
+    font-weight: 400;
+  }
+  
+  .poke-name {
+    text-align: center;
+    font-weight: 600;
+  }
+  
+  .types {
+    display: flex;
+    justify-content: space-around;
+    margin: 20x 0 40px 0;
+  }
+  
+  .hp span,
+  .types span {
+    font-size: 12px;
+    letter-spacing: 0.4px;
+    font-weight: 600;
+  }
+  .stats {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+  }
+  .stats p {
+    color: #404060;
+  }
+  .Cards > div {
+    margin: 20px;
+  }
+  .poke-number {
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+  }
+  a {
+    outline: none;
+    text-decoration: none;
+    padding: 4px 3px 0;
+  }
+  a:link {
+   color:#404060
+  }
+  a:visited {
+    color:#5F236B
+  }
+  a:focus{
+    border-bottom: 2px solid;
+    background:#F5EB6D
+  }
+  table > * {
+    text-align: center;
+    font-family: 'Cookie', cursive;
+    font-size:xx-small ;
+    margin: 0 auto;
+    padding: 10px 20px;
+    /* border: 2px solid black; */
+    width: 100%;
+    display: table;
+    }
+    .letra{
+      font-weight: 500;
+      font-size: 40px;
+      margin: 90px;
+     }
+  table > h1{
+  font-family: 'Cookie', cursive;
+  }
+  h1{
+  font-size: 50px;
+  text-align:center;
+  }
+  #logoVista1 {
+  width: 100%;
+  height: 250px;
+  }
+  .botones {
+    border: 1px solid black;
+    border-radius: 18px;
+    padding: 1px 1em;
+    background: orange 36%;
+    color: white;
+    font-family: monospace;
+    font-size: 150%;
+    text-decoration: none;
+    display: inline-block;
+    width: 6em;
+    text-align: center;
+  }
+  .pokebolaGift {
+    width: 30px;
+    height: 30px;
+  }
+  #contenedorImgTable{
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  width: 100%;
+  bottom: 43px;
+  }
+  article{
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+  align-items: end;
+  }
+  footer{
+    text-align: center;
+    font-family: sans-serif;
+    font-weight: 300px;
+   /* position: absolute;*/
+    bottom: 0;
+    width: 100%;
+    color:#F5EB6D ;
+    /* padding: 1em 0; */
+    margin-top: auto;
+  }
+  #contenedorFooter {
+    background-image: url(img/noche-estrellada.gif);
+    background-position: center;
+    text-align: center;
+    color: white;
+    font-size: 17px;
+    font-family: monospace;
+    font-weight: 700;
+      /* width: 100%; */
+      /* height: 50px; */
+      padding: 14px;
+  }
+  p{
+    margin: 0;
+  }
 }
