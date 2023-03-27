@@ -8,20 +8,17 @@
   </head>
   <body>
     <header id="headerHtml">
+      <img id="imgNavBar" src="img/pokemon-logo.gif" alt="Logo de pokemon">
                 <nav id="header">
-                <img id="imgNavBar" src="img/pokemon-logo.gif" alt="Logo de pokemon">
                   <label for="ordenar">ORDENAR</label>
-                  <select name="ordenar" id="ordenar">                  
-                        <option disabled="">Seleccione una opción</option>
+                  <select class="botones" name="ordenar" id="ordenar">                  
                         <option value="TODOS" id="todos">TODOS</option>
                         <option value="A-Z" id="A-Z">A-Z</option>
                         <option value="Z-A" id="Z-A">Z-A</option>                     
                   </select>
 
                   <label for="tipo">TIPO</label>
-                  <select name="tipo" id="tipo">
-                  
-                      <option disabled="">Seleccione una opción</option>
+                  <select class="botones" name="tipo" id="tipo">
                       <option value="steel">ACERO</option>
                       <option value="water">AGUA</option>
                       <option value="bug">BICHO</option>
@@ -41,13 +38,10 @@
                       <option value="poison">VENENO</option>
                       <option value="flying">VOLADOR</option>
                   </select>
-                    <ul>
-                  <a class="botones" href="">SALIR</a>
-                </ul>
             <!--WAI-ARIA -->
             <input class="buscador" id="searchPokemones" type="search" autocomplete="off" name="buscandoPokemones" aria-label="Search through site content" size="27" placeholder="Ingrese el nombre del Pokemón...">
-              <input class="buscar" type="button" value="Buscar"/>      
-        <p>Mostrando el  <span id="ponerValor">  </span> de los pokemones. </p>
+              <input id="buscar" type="button" value="Buscar"/>   
+              <p id="textoCalc">Mostrando el  <span id="ponerValor">  </span> de los pokemones. </p>   
             </nav>
     </header>
       <main>
@@ -57,27 +51,26 @@
               <td><img id="logoVista1" src="img/pokemon-logo.gif" alt="Logo vista1"></td>
             </tr>
             <tr>
-              <td><h1 class="letra"> Bienvenido(a) al mundo mágico de los pokemones, esperemos que disfrutes de esta nueva <em>POKEDEX</em> hecha para ti.</h1></td>
+              <td><h1 id="letra"> Bienvenido(a) al mundo mágico de los pokemones, esperemos que disfrutes de esta nueva <em>POKEDEX</em> hecha para ti.</h1></td>
             </tr>
             <tr>
-              <td><input class="botones" type="button" id="empezar" value="Empezar"></td>
+              <td><input type="button" id="empezar" value="Empezar"></td>
             </tr>
         </table>
           </section>
-          <div id="contenedorImgTable">
-            <article>
-              <img src="img/pokebola.gif" alt="pokebola Gift" id="pokebola1" class="pokebolaGift">
-              <img src="img/pokebola.gif" alt="pokebola Gift" id="pokebola2" class="pokebolaGift">
-              <img src="img/pokebola.gif" alt="pokebola Gift" id="pokebola3" class="pokebolaGift">
-            </article>
-            <article>
-              <img src="img/pikachu-imagen-animada-0027.gif" alt="Imagen animada">
-            </article>
-      </div>
           <section id="contieneTodosLosPokemones" style="display: none;" >
-          </section>
-
+          </section>  
       </main>
+      <div id="contenedorImgTable">
+        <article id="gifPokebolas">
+          <img src="img/pokebola.gif" alt="pokebola Gift" id="pokebola1" class="pokebolaGift">
+          <img src="img/pokebola.gif" alt="pokebola Gift" id="pokebola2" class="pokebolaGift">
+          <img src="img/pokebola.gif" alt="pokebola Gift" id="pokebola3" class="pokebolaGift">
+        </article>
+        <article id="gifPikachu">
+          <img src="img/pikachu-imagen-animada-0027.gif" alt="Imagen animada">
+        </article>
+      </div>
       <footer>
         <div id="contenedorFooter">
         <p>Proyecto3-DataLovers, por Diana Quispe y Yahaira Perez para Laboratoria-2023</p>
