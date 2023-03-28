@@ -10,14 +10,14 @@
     <header id="headerHtml">
       <img id="imgNavBar" src="img/pokemon-logo.gif" alt="Logo de pokemon">
                 <nav id="header">
-                  <label for="ordenar">ORDENAR</label>
+                  <label for="ordenar" class="label">ORDENAR: </label>
                   <select class="botones" name="ordenar" id="ordenar">                  
                         <option value="TODOS" id="todos">TODOS</option>
                         <option value="A-Z" id="A-Z">A-Z</option>
                         <option value="Z-A" id="Z-A">Z-A</option>                     
                   </select>
 
-                  <label for="tipo">TIPO</label>
+                  <label for="tipo" class="label">TIPO: </label>
                   <select class="botones" name="tipo" id="tipo">
                       <option value="steel">ACERO</option>
                       <option value="water">AGUA</option>
@@ -54,27 +54,25 @@
               <td><h1 id="letra"> Bienvenido(a) al mundo mágico de los pokemones, esperemos que disfrutes de esta nueva <em>POKEDEX</em> hecha para ti.</h1></td>
             </tr>
             <tr>
-              <td><input type="button" id="empezar" value="Empezar"></td>
+              <td>
+                <input type="button" id="empezar" value="Empezar">
+              </td>
             </tr>
         </table>
           </section>
           <section id="contieneTodosLosPokemones" style="display: none;" >
           </section>  
+      
+          <article id="gifPokebolas">
+            <img src="img/pikachu-imagen-animada-0027.gif" id="imagenGif" alt="Imagen animada">
+          </article>
+    
       </main>
-      <div id="contenedorImgTable">
-        <article id="gifPokebolas">
-          <img src="img/pokebola.gif" alt="pokebola Gift" id="pokebola1" class="pokebolaGift">
-          <img src="img/pokebola.gif" alt="pokebola Gift" id="pokebola2" class="pokebolaGift">
-          <img src="img/pokebola.gif" alt="pokebola Gift" id="pokebola3" class="pokebolaGift">
-        </article>
-        <article id="gifPikachu">
-          <img src="img/pikachu-imagen-animada-0027.gif" alt="Imagen animada">
-        </article>
-      </div>
+      
       <footer>
-        <div id="contenedorFooter">
+        <article id="contenedorFooter">
         <p>Proyecto3-DataLovers, por Diana Quispe y Yahaira Perez para Laboratoria-2023</p>
-        </div>
+        </article>
       </footer>
     <script src="main.js" type="module"></script>
   </body>
