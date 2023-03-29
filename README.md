@@ -1,29 +1,24 @@
-![pokemon-logo.gif](https://github.com/LadyDi3103/DEV005-data-lovers/blob/main/src/img/pokemon-logo.gif?raw=true) x reemplazar por bocetos baja fidelidad
+![pokemon-logo.gif](https://github.com/LadyDi3103/DEV005-data-lovers/blob/main/src/img/pokemon-logo.gif?raw=true)
 
 # DATA LOVERS ("POKEDEX")
 
 ## Índice
 
-* [1. Descripción del Proyecto](#1-Descripción-del-proyecto)
-* [2. Objetivo de la página](#2-objetivo-de-la-página)
-* [3. Usuario objetivo](#3-Usuario-objetivo)
-* [4. Necesidad del usuario](#4-necesidad-del-usuario)
-* [5. Historias de usuario](#5-historias-de-usuario)
-* [6. Diseño de la interfaz de Usuario](#6-Diseño-de-la-interfaz-de-Usuario)
-* [7. Prototipo de baja fidelidad](#7-Prototipo-de-baja-fidelidad)
-* [8. Prototipo de alta fidelidad](#8-Prototipo-de-alta-fidelidad)
-* [9. Test de usabilidad](#9-Test-de-usabilidad)
-* [10. Desarrollo de la interfaz](#10-Desarrollo-de-la-interfaz)
-* [11. Diagrama de flujo](#11-Diagrama-de-flujo)
-* [12. Propuesta de proyecto](#12-Propuesta-de-proyecto)
+* [Descripción del Proyecto](Descripción-del-proyecto)
+* [Objetivo de la página](objetivo-de-la-página)
+* [Usuario objetivo](Usuario-objetivo)
+* [Necesidad del usuario](necesidad-del-usuario)
+* [Historias de usuario](historias-de-usuario)
+* [Diseño de la interfaz de Usuario](Diseño-de-la-interfaz-de-Usuario)
+* [Prototipo de baja fidelidad](Prototipo-de-baja-fidelidad)
+* [Prototipo de alta fidelidad](Prototipo-de-alta-fidelidad)
+* [Propuesta de proyecto](Propuesta-de-proyecto)
 
 ---
 
 ## 1. Descripción del Proyecto:
 
-```sh { vsls_cell_id=6ee3debc-c138-4df5-aa89-4d88674c2286 }
-![pokemon-logo.gif](https://github.com/LadyDi3103/DEV005-data-lovers/blob/main/src/img/pokemon-logo.gif?raw=true) x reemplazar por bocetos baja fidelidad
-```
+![vista1Figma](https://github.com/LadyDi3103/DEV005-data-lovers/blob/main/src/img/figmaImg1.png?raw=true)     ![VISTA2-Proyecto](https://github.com/LadyDi3103/DEV005-data-lovers/blob/main/src/img/figmaImg2.png?raw=true)
 
 Data Lovers ("Pokedex"), es una aplicación web que permite al usuario visualizar la data de 251 pokemones, asi como tambien, y podrá ordenar la data de forma ascedente (A-Z) y descendente (Z-A), filtrar por tipo de pokemones (Acero, Agua, Bicho, Dragon, Eléctrico, Fantasma, Fuego, Hada, Hielo, Lucha, Normal, Planta, Psíquico, Roca, Siniestro, Tierra y Volador), y podrá filtrar por nombre al pokémon de su elección.
 
@@ -65,24 +60,30 @@ Se encontró un déficit de páginas intuitivas enfocadas exclusivamente a las c
 
 Nuestro primer acercamiento a la aplicación Web, se basó en el desplazamiento de la información que contendrá esta misma, además de los elementos que la componen. Boceteamos en papel y lápiz nuestras ideas iniciales. Nos pusimos de acuerdo en un diseño y lo plasmamos nuevamente:
 
-![pokemon-logo.gif](https://github.com/LadyDi3103/DEV005-data-lovers/blob/main/src/img/pokemon-logo.gif?raw=true) x reemplazar por bocetos baja fidelidad
+![pokemon-logo.gif](https://github.com/LadyDi3103/DEV005-data-lovers/blob/main/src/img/pokemon-logo.gif?raw=true)
+![pokemon-logo.gif](https://github.com/LadyDi3103/DEV005-data-lovers/blob/main/src/img/pokemon-logo.gif?raw=true)
 
 ### Prototipo de alta fidelidad
 
 Usamos Figma como herramienta de diseño visual.
 
-![pokemon-logo.gif](https://github.com/LadyDi3103/DEV005-data-lovers/blob/main/src/img/pokemon-logo.gif?raw=true) x reemplazar por bocetos baja fidelidad
+![vista1Figma](https://github.com/LadyDi3103/DEV005-data-lovers/blob/main/src/img/figmaImg1.png?raw=true)
+![vista2Figma](https://github.com/LadyDi3103/DEV005-data-lovers/blob/main/src/img/figmaImg2.png?raw=true)
+![FiltradoxtipoFigma](https://github.com/LadyDi3103/DEV005-data-lovers/blob/main/src/img/figmaImg5.png?raw=true)
+![vista6Figma](https://github.com/LadyDi3103/DEV005-data-lovers/blob/main/src/img/figmaImg6.png?raw=true)
 
-![pokemon-logo.gif](https://github.com/LadyDi3103/DEV005-data-lovers/blob/main/src/img/pokemon-logo.gif?raw=true) x reemplazar por bocetos baja fidelidad
+### Responsive
 
-```sh { vsls_cell_id=5339429f-0bbb-4988-9399-ca0867ee8990 }
-![pokemon-logo.gif](https://github.com/LadyDi3103/DEV005-data-lovers/blob/main/src/img/pokemon-logo.gif?raw=true) x reemplazar por bocetos baja fidelidad
-```
+#### Smartphone
 
-#### Link de Figma: ![link de Figma]() https://www.figma.com/file/pt6yJwDvdJsEKaHKqG4DkH/Data-Lovers?node-id=0-1&t=8dtdEZM24kI5VPFh-0
+![pokemon-logo.gif](https://github.com/LadyDi3103/DEV005-data-lovers/blob/main/src/img/pokemon-logo.gif?raw=true)
+![pokemon-logo.gif](https://github.com/LadyDi3103/DEV005-data-lovers/blob/main/src/img/pokemon-logo.gif?raw=true)
+
+#### Tablet
+
+![pokemon-logo.gif](https://github.com/LadyDi3103/DEV005-data-lovers/blob/main/src/img/pokemon-logo.gif?raw=true)
+![pokemon-logo.gif](https://github.com/LadyDi3103/DEV005-data-lovers/blob/main/src/img/pokemon-logo.gif?raw=true)
+
+#### Link de Figma: !() https://www.figma.com/file/pt6yJwDvdJsEKaHKqG4DkH/Data-Lovers?node-id=0-1&t=8dtdEZM24kI5VPFh-0
 
 #### Link GitHub-Pages Deploy:
-
-## 7. Propuesta de proyecto
-
-![pokemon-logo.gif](https://github.com/LadyDi3103/DEV005-data-lovers/blob/main/src/img/pokemon-logo.gif?raw=true) x reemplazar por bocetos baja fidelidad
