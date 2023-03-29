@@ -74,7 +74,7 @@ Usamos Figma como herramienta de diseño visual.
 
 ![vista1Figma](https://github.com/LadyDi3103/DEV005-data-lovers/blob/main/src/img/figmaImg1.png?raw=true)
 ![vista2Figma](https://github.com/LadyDi3103/DEV005-data-lovers/blob/main/src/img/figmaImg2.png?raw=true)
-![FiltradoxtipoFigma](https://github.com/LadyDi3103/DEV005-data-lovers/blob/main/src/img/figmaImg5.png?raw=true) 
+![FiltradoxtipoFigma](https://github.com/LadyDi3103/DEV005-data-lovers/blob/main/src/img/figmaImg5.png?raw=true)
 ![vista6Figma](https://github.com/LadyDi3103/DEV005-data-lovers/blob/main/src/img/figmaImg6.png?raw=true)
 
 ### Responsive
@@ -89,6 +89,6 @@ Usamos Figma como herramienta de diseño visual.
 ![pokemon-logo.gif](https://github.com/LadyDi3103/DEV005-data-lovers/blob/main/src/img/tablet%20(1).png?raw=true)
 ![pokemon-logo.gif](https://github.com/LadyDi3103/DEV005-data-lovers/blob/main/src/img/tablet%20(2).png?raw=true)
 
-#### Link de Figma: !(https://www.figma.com/file/pt6yJwDvdJsEKaHKqG4DkH/Data-Lovers?node-id=0-1&t=8dtdEZM24kI5VPFh-0) 
+#### [Link de Figma:](https://www.figma.com/file/pt6yJwDvdJsEKaHKqG4DkH/Data-Lovers?node-id=0-1&t=8dtdEZM24kI5VPFh-0)
 
 #### Link GitHub-Pages Deploy:
