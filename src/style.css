@@ -32,7 +32,7 @@ html {
     width: 20%;
     text-align: center;
     height: 55px;
-    margin-bottom: 10%;
+    margin-bottom: 6%;
   }
   .buscador {
     width: 30%;
@@ -265,7 +265,7 @@ html {
   width: 20%;
   text-align: center;
   height: 55px;
-  margin-bottom: 19%;
+  margin-bottom: 8%;
 }
   #gifPokebolas {
     display: flex;
@@ -337,7 +337,7 @@ html {
     width: 20%;
     text-align: center;
     height: 50px;
-    margin-bottom: 20%;
+    margin-bottom: 14%;
 }
 #gifPokebolas {
   display: flex;
@@ -426,7 +426,7 @@ html {
     width: 30%;
     text-align: center;
     height: 50px;
-    margin-bottom: 20%;
+    margin-bottom: 17%;
 }
 }
   /* 
@@ -459,7 +459,7 @@ html {
       width: 25%;
       text-align: center;
       height: 50px;
-      margin-bottom: 59%;
+      margin-bottom: 9%;
 } 
   #imagenGif{
     width: 100%;
